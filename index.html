@@ -823,7 +823,7 @@ input,select,textarea,button{font-family:var(--font)}
 // ══════════════════════════════════════════════════════════
 //  ⚙️  SET YOUR API URL HERE
 // ══════════════════════════════════════════════════════════
-const API_URL = "YOUR_APPS_SCRIPT_WEB_APP_URL_HERE";
+const API_URL = "https://script.google.com/a/macros/techolution.com/s/AKfycbwEQCsOCa4ByaixcL1a2iNtm127oMR3spLvgQQrADdCH5Nqggdy1UDsXsT-agj88gptiA/exec";
 // ══════════════════════════════════════════════════════════
 
 const STAGES=['Prospecting','Intro & Discovery','Qualification','Proposal & EB','Negotiation','Closed Won'];
@@ -895,7 +895,7 @@ async function loadData(){
 
   if(!API_URL||API_URL.includes('YOUR_APPS')){
     $('loaderEl').style.display='none';$('errEl').style.display='flex';
-    $('errMsg').textContent='API_URL not set. Replace YOUR_APPS_SCRIPT_WEB_APP_URL_HERE in the <script> block with your deployed Apps Script URL.';
+    $('errMsg').textContent='API_URL not set. Replace https://script.google.com/a/macros/techolution.com/s/AKfycbwEQCsOCa4ByaixcL1a2iNtm127oMR3spLvgQQrADdCH5Nqggdy1UDsXsT-agj88gptiA/exec in the <script> block with your deployed Apps Script URL.';
     return;
   }
   try{
